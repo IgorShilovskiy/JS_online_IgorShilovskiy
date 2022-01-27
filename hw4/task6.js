@@ -1,4 +1,4 @@
-var reduce = function (arr, cb, acc) {
+var reduceRight = function (arr, cb, acc) {
     if (Array.isArray(arr)) {
         if (typeof cb === "function") {
             if ((typeof acc==='number')||(typeof acc==='string')){
@@ -24,7 +24,7 @@ const arr = [1, 2, 3];
 const arr1 = [1, -2, 3, -4, 5];
 const acc = 'str';
 
-var result = reduce(arr1,  function (item, i, arr) {
+var result = reduceRight(arr1,  function (item, i, arr) {
     return item;
 },acc);
 
